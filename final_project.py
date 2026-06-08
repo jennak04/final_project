@@ -138,6 +138,19 @@ def remove_song():
         print("Please enter a number")
 
 ########################################
+
+######### FUNCTION - GET SONG DESCRIPTION ###########
+
+# how to get from playlist?
+# check for empty
+def get_song_desc():
+    song_name = input("Enter song for description: ")
+    result = get_song_info(song_name)
+    description = result.get("description")
+    genre = result.get("genre")
+    print()
+    print(f"Genre: \n{genre}\n")
+    print(f"Description: \n{description}\n")
     
 ########################################
 
@@ -153,6 +166,9 @@ def main():
         print("\n1. Add Song")
         print("2. Remove Song")
         print("3. View Playlist")
+        print("4. See song description")
+        print("5. See playlist deacription")
+        print("6. Save and Exit")
 
         choice = input("Choice: ")
 
@@ -164,9 +180,18 @@ def main():
 
         elif choice == "3":
             view_playlist()
+            
+            
+        elif choice == "4":
+            get_song_desc()
+            
+        elif choice == "6":
+            print("Playlist saved (will save after all functions are finished)")
+            break
 
         else:
             print("Invalid choice.")
+            
 
 
 main()
