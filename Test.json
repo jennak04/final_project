@@ -1,0 +1,26 @@
+{
+    "playlist_name": "Test",
+    "songs": [
+        {
+            "song": "Test2",
+            "artist": "Test Artist",
+            "genre": "Pop",
+            "duration": "3:30",
+            "description": "This is a fake description used for testing."
+        },
+        {
+            "song": "Test4",
+            "artist": "Test Artist",
+            "genre": "Pop",
+            "duration": "3:30",
+            "description": "This is a fake description used for testing."
+        },
+        {
+            "song": "Test3",
+            "artist": "Test Artist",
+            "genre": "Pop",
+            "duration": "3:30",
+            "description": "This is a fake description used for testing."
+        }
+    ]
+}
